@@ -1,2 +1,1 @@
-import './components/modals';
-import './components/hero-btn';
+import './components/modal';

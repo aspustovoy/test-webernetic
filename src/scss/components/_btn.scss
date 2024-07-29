@@ -5,13 +5,14 @@
   padding: 12px;
   padding-left: 24px;
   border-radius: 60px;
+  border: 1px solid #244c98;
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 18px;
   line-height: 160%;
-  color: var(--white);
+  color: #244c98;
   background-color: transparent;
-  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
   cursor: pointer;
 
   @include tablet {
@@ -24,6 +25,7 @@
 
   &.focus-visible {
     color: var(--white);
+    border-color: var(--brilliant-azure);
     background-color: var(--brilliant-azure);
   }
 
@@ -34,15 +36,18 @@
       }
     }
     color: var(--white);
+    border-color: var(--brilliant-azure);
     background-color: var(--brilliant-azure);
   }
 
   &:active {
     color: var(--white);
+    border-color: var(--brilliant-azure);
     background-color: var(--brilliant-azure);
   }
 
   &--fill {
+    color: var(--white);
     background-color: var(--dark-blue);
   }
 }
