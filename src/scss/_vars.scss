@@ -1,0 +1,20 @@
+:root {
+  // base
+  --font-family: "Manrope", sans-serif;
+
+  --content-width-for-bigdesktop: 1840px;
+  --content-width-for-desktop: 1360px;
+  --content-width-for-tablet: 720px;
+  --content-width-for-mobile: 327px;
+  --container-width-for-desktop: calc(var(--content-width-for-bigdesktop) + (40 * 2));
+  --container-width-for-tablet: calc(var(--content-width-for-desktop) + (40 * 2));
+  --container-width-for-small-tablet: calc(var(--content-width-for-tablet) + (24 * 2));
+  --container-width-for-mobile: calc(var(--content-width-for-mobile) + (24 * 2));
+  // colors
+  --primary: #1f4284;
+  --secondary: #727272;
+  --white: #fff;
+  --alice-blue:#ebf0fa;
+  --dark-blue:#244c98;
+  --brilliant-azure: #007bff;
+}

@@ -1,0 +1,48 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  padding-left: 24px;
+  border-radius: 60px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  color: var(--white);
+  background-color: transparent;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  cursor: pointer;
+
+  @include tablet {
+    font-size: 15px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.focus-visible {
+    color: var(--white);
+    background-color: var(--brilliant-azure);
+  }
+
+  @include hover {
+    svg {
+      path {
+        stroke: var(--brilliant-azure);
+      }
+    }
+    color: var(--white);
+    background-color: var(--brilliant-azure);
+  }
+
+  &:active {
+    color: var(--white);
+    background-color: var(--brilliant-azure);
+  }
+
+  &--fill {
+    background-color: var(--dark-blue);
+  }
+}
